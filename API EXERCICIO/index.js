@@ -1,0 +1,18 @@
+import express from 'express';
+import cors from 'cors';
+import userRoutes from "./routes/users.js";
+
+const app = express();
+
+app.use(express.json());
+app.use(cors());
+
+app.use(userRoutes);
+
+app.listen(3000,(error)=>{
+    if(error){
+        console.log("Deu ruim ai");
+        return;
+    }
+    console.log("Server ta on pai.");
+});

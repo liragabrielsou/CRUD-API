@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Usuarios</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="../js/main.js"></script>
+</head>
+<body style="margin: 0px;">
+    <div style="color: white; display: flex; justify-content: space-between; background: linear-gradient(45deg, #0f0097, rgb(28, 146, 241));padding: 10px;">
+        <H1 style="padding: 20px;">Cadastro de Usuarios</H1>
+        <div style="display: flex ;justify-content: space-between; padding: 20px;">
+            <a href="./index.html" style="padding: 20px;color: rgb(255, 230, 0);"><h3>Cadastro de Usuarios</h3></a>
+            <a href="./formsCadastrarTarefa.html" style="padding: 20px;color: rgb(255, 230, 0);"><h3>Cadastro de Tarefas</h3></a>
+            <a href="./formsGerenciamentoTarefa.html" style="padding: 20px;color: rgb(255, 230, 0);"><h3>Gerenciamento de Tarefas</h3></a>
+        </div>
+    </div>
+    
+    <form style="padding: 30px;" action="">
+        <label for="nome">
+            <h3>Nome:</h3>
+            <input type="text" id="nome_usuario" required><br>
+            <h3>Email:</h3>
+            <input type="text" id="email_usuario">
+            <br><br>
+            <input type="submit" onclick="postUsers()" value="Cadastrar">
+        </label>
+    </form>
+    <div id="usuario_cadastrados"></div>
+    
+</body>
+</html>
